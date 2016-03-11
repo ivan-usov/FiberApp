@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function RemoveSurfaceImage(hObject, eventdata)
 
 FA = guidata(hObject);

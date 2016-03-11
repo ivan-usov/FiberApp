@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [xdata, ydata, count] = MSE2ED(data, step, procStepNum)
 %MSEND2ENDDISTANCE Mean-Square End-to-End Distance
 

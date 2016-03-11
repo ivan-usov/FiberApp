@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function outXY = distributePoints(inXY, step)
 %DISTRIBUTE_POINTS Distribute equally spaced points along the curve
 

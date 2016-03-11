@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = OrderParameter2D
 ph = 277; % panel height
 % Panel and hide button

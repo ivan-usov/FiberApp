@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function out = floor2n(in)
 %FLOOR2N Floor a small number (<100) up to two significant digits
 

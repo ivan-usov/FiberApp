@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [gx, gy] = gradient2Dx2(im)
 %GRADIENT2Dx2 Summary of this function goes here
 %   Returns doubled gradient, to be inside int16 possible values

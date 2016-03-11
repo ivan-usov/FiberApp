@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [xdata, ydata] = getPoint(this)
 % GETPOINT Get point coordinates with mouse input
 

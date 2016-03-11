@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function out = ceil2n(in)
 %CEIL2N Ceil only a small number (<100) up to two significant digits
 

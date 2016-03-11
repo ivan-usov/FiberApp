@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function OpenImage(hObject, eventdata)
 FA = guidata(hObject);
 % Open dialog for image selection

@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function show(hObject, eventdata)
 tag = get(hObject, 'Tag');
 

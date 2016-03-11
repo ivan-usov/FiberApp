@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = FiberTrackingParameters
 FA = guidata(gcf);
 ph = 305; % panel height

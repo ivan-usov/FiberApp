@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [xdata, ydata, count] = MSMD(data, step, procStepNum)
 %MSMIDPOINTDISPLACEMENT Mean-Square Midpoint Displacement
 

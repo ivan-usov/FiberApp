@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [x_p, y_p] = searchPath(im, fibInt, x_0, y_0, x_end, y_end)
 
 % Terminate, if the start point is the same as the end point

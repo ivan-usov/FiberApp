@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function renderFibers(this, varargin)
 
 if isempty(this.fibRect); return; end

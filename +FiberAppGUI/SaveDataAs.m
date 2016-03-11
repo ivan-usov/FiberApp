@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function isSaved = SaveDataAs(hObject, eventdata)
 
 FA = guidata(hObject);

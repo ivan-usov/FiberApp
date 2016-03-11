@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function hide(hObject, eventdata)
 tag = get(hObject, 'Tag');
 

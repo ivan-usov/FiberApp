@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = MaskParameters
 FA = guidata(gcf);
 ph = 121; % panel height

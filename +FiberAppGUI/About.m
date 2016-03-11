@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function About(hObject, eventdata)
 
 aboutFig = figure('NumberTitle', 'off', 'MenuBar', 'none', 'Resize', 'off', ...

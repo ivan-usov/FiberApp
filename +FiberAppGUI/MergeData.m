@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function MergeData(hObject, eventdata)
 % Get addresses of the files to merge
 [fileName, filePath] = uigetfile('*.mat', 'Select data files to merge', ...

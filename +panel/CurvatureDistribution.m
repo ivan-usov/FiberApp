@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = CurvatureDistribution
 ph = 168; % panel height
 % Panel and hide button

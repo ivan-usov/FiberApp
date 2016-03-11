@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function out = round2n(in)
 %ROUND2N Round a number up to two significant digits
 

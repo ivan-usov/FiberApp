@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function tutorial(this, varargin)
 if ~this.isTutorial; return; end
 

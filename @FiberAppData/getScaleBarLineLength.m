@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function len = getScaleBarLineLength(this)
 % GETSCALEBARLINELENGTH Get horizontal or vertical scale bar line with mouse input
 

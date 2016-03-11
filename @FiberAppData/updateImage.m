@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function updateImage(this, varargin)
 %UPDATEIMAGE Update image for viewing (uint8) and display it
 % Parse input

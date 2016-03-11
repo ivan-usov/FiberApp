@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = ViewProperties
 FA = guidata(gcf);
 ph = 144; % panel height

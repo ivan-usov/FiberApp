@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function pan_zoom(this, varargin)
 switch varargin{1}
     case 'z_in'     % Zoom in

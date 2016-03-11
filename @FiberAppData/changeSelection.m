@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function changeSelection(this, val)
 % Return if the selection is on already selected fiber or selection was
 % dropped (val == 0)

@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 classdef ImageData < handle    
     properties % Stored image information
         name = char.empty;

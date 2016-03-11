@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = HeightProfile
 ph = 53; % panel height
 % Panel and hide button

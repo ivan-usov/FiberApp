@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function checkAccordance(this)
 % Clean axes from fibers
 delete(this.fibLine);

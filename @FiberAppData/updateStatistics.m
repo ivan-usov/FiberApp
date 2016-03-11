@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function updateStatistics(this)
 % Number of images
 set(findobj('Tag', 't_nIm'), 'String', length(this.imageData));

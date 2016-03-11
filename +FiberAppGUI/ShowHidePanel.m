@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function ShowHidePanel(hObject, eventdata)
 
 switch get(hObject, 'Type')

@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function p = FiberDataInformation
 ph = 209; % panel height
 % Panel and hide button

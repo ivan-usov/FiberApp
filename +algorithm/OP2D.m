@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [xdata, ydata] = OP2D(p_all, v_all, xMin, yMin, ...
     gridStep, procStepNum, numCellX, numCellY, isCircleArea)
 %ORDERPARAMETER2D Calculate Order Parameter 2D vs Box size

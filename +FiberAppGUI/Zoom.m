@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function Zoom(hObject, eventdata, dir)
 FA = guidata(hObject);
 switch dir

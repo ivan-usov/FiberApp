@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function FitAllFibers(hObject, eventdata)
 prev = 0;
 hwb = waitbar(prev, 'Please wait...', 'CloseRequestFcn', '');

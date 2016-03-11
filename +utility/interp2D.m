@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function z = interp2D(im, xi, yi, method)
 %INTERP2D 2D data interpolation
 

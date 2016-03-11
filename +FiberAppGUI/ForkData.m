@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function ForkData(hObject, eventdata)
 
 % Get address of the file to split data from

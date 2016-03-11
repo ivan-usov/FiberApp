@@ -1,5 +1,3 @@
-% Copyright (c) 2014, ETH Zurich (Switzerland)
-% All rights reserved.
 function [rMin, rMax] = checkRange(rMin, rMax, data)
 %CHECKRANGE Check rangeMin and rangeMax values
 
