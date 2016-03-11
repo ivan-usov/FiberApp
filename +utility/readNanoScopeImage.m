@@ -13,7 +13,7 @@ scaleZ = [];
 fid = fopen(fullfile(filePath, fileName));
 % Max header length 40960 (80960 in a new version)
 cHeader = fscanf(fid, '%c', 80960);
-sHeader = textscan(cHeader, '%s', 'Delimiter', '', 'BufSize', 80960);
+sHeader = textscan(cHeader, '%s', 'Delimiter', '');
 sHeader = sHeader{1};
 
 % Check for an Image Data (Height, Phase, Amplitude etc.) in the file
