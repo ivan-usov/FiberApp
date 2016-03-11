@@ -45,27 +45,22 @@ FA.spApi.addNewMagnificationCallback(@FA.renderFibers);
 CreateMenu;
 CreateToolbar;
 
-% Load panels
-FA.userPanel(1) = panel.ImageParameters; % initially open
-FA.userPanel(2) = panel.FiberTrackingParameters; % initially open
-FA.userPanel(3) = panel.FiberDataInformation; % initially open
-panel.ViewProperties;
-panel.MaskParameters;
-panel.FiberImageGenerator;
-panel.HeightProfile;
-panel.HeightACF;
-panel.HeightDFT;
-panel.HeightDistribution;
-panel.LengthDistribution;
-panel.OrientationDistribution;
-panel.CurvatureDistribution;
-panel.KinkAngleDistribution;
-panel.BondCorrelationFunction;
-panel.MSEnd2EndDistance;
-panel.MSMidpointDisplacement;
-panel.ScalingExponent;
-panel.ExcessKurtosis;
-panel.OrderParameter2D;
+% Load panels from the '+panel' folder
+panel_files = what('+panel');
+[~, panel_names] = cellfun(@fileparts, panel_files.m, 'UniformOutput', false);
+for k = 1:length(panel_names)
+    panel_name = panel_names{k};
+    FA.panels.(panel_name) = panel.(panel_name);
+end
+
+% Get tags of the initially open panels and make them visible
+tags = zeros(1, length(FA.defaultPanels));
+for k = 1:length(FA.defaultPanels)
+    tags(k) = FA.panels.(FA.defaultPanels{k});
+end
+FA.openPanels = tags;
+set(FA.openPanels, 'Visible', 'on');
+
 end
 
 % -------------------------------------------------------------------------
@@ -216,7 +211,7 @@ uimenu(processingMenu, 'Label', 'Bond Correlation Function', 'Separator', 'on', 
     'Tag', 'BondCorrelationFunction', ...
     'Callback', @FiberAppGUI.ShowHidePanel);
 uimenu(processingMenu, 'Label', 'MS End-to-end Distance', ...
-    'Tag', 'MSEnd2endDistance', ...
+    'Tag', 'MSEnd2EndDistance', ...
     'Callback', @FiberAppGUI.ShowHidePanel);
 uimenu(processingMenu, 'Label', 'MS Midpoint Displacement', ...
     'Tag', 'MSMidpointDisplacement', ...
@@ -333,7 +328,7 @@ function ResizeFcn(hObject, eventdata)
 FA = guidata(hObject);
 if isempty(FA); return; end
 
-panel.updatePosition;
+FA.updatePanelPosition;
 end
 
 function KeyPressFcn(hObject, eventdata)

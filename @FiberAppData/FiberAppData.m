@@ -4,7 +4,13 @@ classdef FiberAppData < handle
     properties % Basic data
         spApi               % scroll panel API
         spAxes              % scroll panel axes
-        userPanel           % open user panels
+        
+        panels                      % references to all panels
+        openPanels                  % references to the open panels
+        defaultPanels = {'ImageParameters', ...   % initially open panels
+            'FiberTrackingParameters', ...
+            'FiberDataInformation'};
+        
         isTutorial = false  % show tutorial messages
         tutorialShowed = {};    % list of showed tutorial messages
     end
@@ -80,9 +86,9 @@ classdef FiberAppData < handle
     end
     
     methods
-        function set.userPanel(this, val)
-            this.userPanel = val;
-            panel.updatePosition;
+        function set.openPanels(this, val)
+            this.openPanels = val;
+            this.updatePanelPosition;
         end
         
         % -----------------------------------------------------------------
