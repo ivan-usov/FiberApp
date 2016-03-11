@@ -330,6 +330,9 @@ end
 % FiberApp figure callback functions --------------------------------------
 % -------------------------------------------------------------------------
 function ResizeFcn(hObject, eventdata)
+FA = guidata(hObject);
+if isempty(FA); return; end
+
 panel.updatePosition;
 end
 
