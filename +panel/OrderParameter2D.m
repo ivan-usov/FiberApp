@@ -347,7 +347,7 @@ p_rand = [xc + xy(1,:).*cos(angle) - xy(2,:).*sin(angle);
     yc + xy(1,:).*sin(angle) + xy(2,:).*cos(angle)];
 
 % Get vectors and points
-v_rand = diff(xy, 1, 2);
+v_rand = diff(p_rand, 1, 2);
 l = sqrt(sum(v_rand.^2));
 v_rand = v_rand./[l; l];
 
