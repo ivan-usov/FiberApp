@@ -2,6 +2,7 @@ function OpenImage(hObject, eventdata)
 FA = guidata(hObject);
 % Open dialog for image selection
 [fileName, filePath] = uigetfile({'*.*', 'NanoScope File (*.*)'; ...
+    '*.flt', 'FLT image file (*.flt)'; ...
     '*.tif; *.tiff', 'Image file (*.tif, *.tiff)'});
 if isequal(fileName, 0); return; end % Cancel button pressed
 
@@ -29,6 +30,10 @@ switch utility.getFileExtension(fileName)
         sizeY_nm = sizeY;
         scaleXY = 1;
         scaleZ = 1;
+        
+    case 'flt' % FLT file
+        [im, sizeX, sizeY, sizeX_nm, sizeY_nm, scaleXY, scaleZ] = ...
+            utility.readFltImage(filePath, fileName);
         
     otherwise % NanoScope
         [im, sizeX, sizeY, sizeX_nm, sizeY_nm, scaleXY, scaleZ] = ...
