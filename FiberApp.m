@@ -46,7 +46,8 @@ CreateMenu;
 CreateToolbar;
 
 % Load panels from the '+panel' folder
-panel_files = what(['FiberApp' filesep '+panel']);
+main_path = fileparts(mfilename('fullpath'));
+panel_files = what([main_path, filesep, '+panel']);
 [~, panel_names] = cellfun(@fileparts, panel_files.m, 'UniformOutput', false);
 for k = 1:length(panel_names)
     panel_name = panel_names{k};
