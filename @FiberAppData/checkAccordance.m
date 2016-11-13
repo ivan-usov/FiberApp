@@ -64,7 +64,10 @@ else % Image already has fiber data
     this.step_nm = this.curIm.step_nm;
     
     % Retrieve tracked fibers
-    this.fibLine = cellfun(@(xy) line(xy(1,:), xy(2,:)), this.curIm.xy);
+    for k = 1:length(this.imageData.xy)
+        xy = this.curIm.xy{k};
+        this.fibLine(end+1) = line(xy(1,:), xy(2,:));
+    end
     
     switch this.fiberStyle
         case 1 % 'line'
