@@ -24,6 +24,17 @@ switch utility.getFileExtension(fileName)
             im = int16(rgb2gray(im));
         end
         
+        % Check if it's an image stack
+        im_num = length(imfinfo(fullfile(filePath, fileName)));
+        if im_num > 1
+            FA.imageStackSize = im_num;
+            FA.imageStack = zeros([size(im), FA.imageStackSize], 'int16');
+            for k = 1:FA.imageStackSize % read images in the stack via for-loop
+                FA.imageStack(:,:,k) = int16(imread(fullfile(filePath, fileName), k));
+            end
+            FA.imageStackPos = 1;
+        end
+        
         % Information about image with default values
         [sizeY, sizeX] = size(im);
         sizeX_nm = sizeX;

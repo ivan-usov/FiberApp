@@ -11,6 +11,10 @@ classdef FiberAppData < handle
             'FiberTrackingParameters', ...
             'FiberDataInformation'};
         
+        imageStack
+        imageStackSize
+        imageStackPos
+        
         isTutorial = false  % show tutorial messages
         tutorialShowed = {};    % list of showed tutorial messages
     end
