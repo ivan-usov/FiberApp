@@ -53,6 +53,12 @@ if isempty(ind) % Image is new
 else % Image already has fiber data
     this.curIm = this.imageData(ind);
     
+    % Retrieve some image parameters in case there was rescaling applied
+    this.sizeX_nm = this.curIm.sizeX_nm;
+    this.sizeY_nm = this.curIm.sizeY_nm;
+    this.scaleXY = this.curIm.scaleXY;
+    this.scaleZ = this.curIm.scaleZ;
+    
     % Retrieve tracking parameters
     this.alpha = this.curIm.alpha;
     this.beta = this.curIm.beta;
