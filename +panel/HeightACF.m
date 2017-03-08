@@ -169,6 +169,8 @@ for k = 1:length(data)
         ss = ss(ss~=0);
         len = diff(ind);
         
+        if isempty(len); continue; end % Skip fiber with no periodicity
+        
         z = [];
         for l = 1:length(len)
             xx = linspace(0, pi, len(l)+1);
