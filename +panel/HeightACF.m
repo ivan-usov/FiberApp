@@ -154,11 +154,11 @@ for k = 1:length(data)
         case 2 % const
             z = z - mean(z);
         case 3 % poly1
-            fo = fit(x', z', 'poly1');
-            z = z - (fo.p1*x + fo.p2);
+            fo = polyfit(x', z', 1);
+            z = z - (fo(1)*x + fo(2));
         case 4 % poly2
-            fo = fit(x', z', 'poly2');
-            z = z - (fo.p1*x.^2 + fo.p2*x + fo.p3);
+            fo = polyfit(x', z', 2);
+            z = z - (fo(1)*x.^2 + fo(2)*x + fo(3));
     end
     
     if method == 0 % Twist angle
@@ -168,6 +168,8 @@ for k = 1:length(data)
         ind = find(ss);
         ss = ss(ss~=0);
         len = diff(ind);
+        
+        if isempty(len); continue; end % Skip fiber with no periodicity
         
         z = [];
         for l = 1:length(len)

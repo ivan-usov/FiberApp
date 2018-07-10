@@ -28,9 +28,12 @@ set(this.fibLine(val), 'Color', this.selFiberColor, 'LineWidth', this.selFiberWi
 
 % Arrange masks appearance
 m = this.curIm.mask{val};
-if ~isempty(m)
-    this.maskLine = arrayfun(@(mx,my,ms) rectangle('Parent', this.spAxes, ...
+for k = 1:size(m, 2)
+    mx = m(1, k);
+    my = m(2, k);
+    ms = m(3, k);
+    this.maskLine(end+1) = rectangle('Parent', this.spAxes, ...
         'Position',  [mx-ms/2, my-ms/2, ms, ms], 'EdgeColor', this.maskLineColor, ...
-        'LineWidth', this.maskLineWidth),  m(1,:), m(2,:), m(3,:));
+        'LineWidth', this.maskLineWidth);
 end
 

@@ -29,7 +29,7 @@ FA = FiberAppData;
 guidata(gcf, FA);
 
 % Open scroll panel
-sp = imscrollpanel(gcf, image(0.8*ones(10,10,3)));
+sp = imscrollpanel(gcf, image(0.94*ones(10,10,3)));
 set(sp, 'Units', 'pixels');
 % Make sliders more visible
 set(findobj('Parent', sp, 'Type', 'uicontrol'), 'Background', [0.7 0.7 0.7]);
