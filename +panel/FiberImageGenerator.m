@@ -215,7 +215,7 @@ switch get(ui.distrib, 'Value')
         l_avg = exp(mu+sigma.^2/2);
     case 3 % Exponential
         l = round(random('Exponential', mu, [1, fibNum])/fibStep_nm);
-        l_avg = mean(l);
+        l_avg = mu;
 end
 
 if get(ui.genImage, 'Value') == get(ui.genImage, 'Min') % generate only fibers
