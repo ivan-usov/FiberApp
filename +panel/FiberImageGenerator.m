@@ -20,7 +20,7 @@ uicontrol(p, 'Style', 'text', 'HorizontalAlignment', 'left', ...
     'String', 'Length distribution', ...
     'Position', [10 ph-38 100 14]);
 ui.distrib = uicontrol(p, 'Style', 'popup', 'BackgroundColor', [1 1 1], ...
-    'String', {'Normal', 'Lognormal'}, ...
+    'String', {'Normal', 'Lognormal', 'Exponential'}, ...
     'UserData', 1, ... % Current choice
     'Callback', @FiberImageGenerator_LengthDistribution, ...
     'Position', [135 ph-42 75 22]);
@@ -161,10 +161,17 @@ switch val
         mu_new = exp(mu_old+sigma_old^2/2);
         sigma_new = exp(2*mu_old+sigma_old^2)*(exp(sigma_old^2)-1);
         set([ui.t_nm, ui.t2_nm], 'String', 'nm');
+        set(ui.sigma, 'Enable', 'on')
     case 2 % Lognormal
         mu_new = log(mu_old^2/sqrt(sigma_old+mu_old^2));
         sigma_new = sqrt(log(1+sigma_old/mu_old^2));
         set([ui.t_nm, ui.t2_nm], 'String', '');
+        set(ui.sigma, 'Enable', 'on')
+    case 3 % Exponential
+        mu_new = mu_old;
+        sigma_new = sigma_old;
+        set([ui.t_nm, ui.t2_nm], 'String', 'nm');
+        set(ui.sigma, 'Enable', 'off')
 end
 set(ui.mu, 'String', mu_new);
 set(ui.sigma, 'String', sigma_new);
@@ -209,6 +216,9 @@ switch get(ui.distrib, 'Value')
     case 2 % Lognormal
         l = round(random('Lognormal', mu, sigma, [1, fibNum])/fibStep_nm);
         l_avg = exp(mu+sigma.^2/2);
+    case 3 % Exponential
+        l = round(random('Exponential', mu, [1, fibNum])/fibStep_nm);
+        l_avg = mu;
 end
 
 if get(ui.genImage, 'Value') == get(ui.genImage, 'Min') % generate only fibers
