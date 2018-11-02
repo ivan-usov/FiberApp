@@ -137,13 +137,16 @@ end
 
 % Plot graph in a new figure
 figure('NumberTitle', 'off', 'Name', ['SE ' datestr(now, 'HH:MM:SS dd/mm/yy')]);
-[AX,H1,H2] = plotyy(xdata, ydata, xdata, se, @plot);
-set(AX(2), 'XTick', [], 'YColor', 'r');
-set(H1, 'Marker', '.', 'LineStyle', 'none');
-set(H2, 'Color', 'r');
+
+yyaxis left
+plot(xdata, ydata, 'Marker', '.', 'LineStyle', 'none');
 xlabel('ln(l)');
-ylabel(AX(1), 'ln(\langleR\rangle)', 'Color', 'k');
-ylabel(AX(2), 'Scaling exponent, \nu', 'Color', 'k');
+ylabel('ln(\langleR\rangle)', 'Color', 'k');
+
+yyaxis right
+plot(xdata, se)
+ylabel('Scaling exponent, \nu', 'Color', 'k');
+
 title(FA.dataName, 'Interpreter', 'none');
 
 % Save results to a text file
