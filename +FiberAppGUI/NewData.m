@@ -1,3 +1,5 @@
+%NEWDATA "New Data" menu item callback
+
 function NewData(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -18,4 +20,3 @@ FA.isDataModified = false;
 FA.dataName = char.empty;
 FA.dataPath = char.empty;
 FA.checkAccordance();
-

@@ -1,6 +1,6 @@
-function out = ceil2n(in)
 %CEIL2N Ceil only a small number (<100) up to two significant digits
 
+function out = ceil2n(in)
 if in == 0
     out = 0;
     return
@@ -19,4 +19,3 @@ end
 % end
 
 out = ceil(in)*10.^i;
-

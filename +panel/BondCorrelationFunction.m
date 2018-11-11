@@ -1,3 +1,5 @@
+%BONDCORRELATIONFUNCTION Create a bond correlation function panel
+
 function p = BondCorrelationFunction
 ph = 122; % panel height
 pTitle = 'Bond Correlation Function';
@@ -193,4 +195,3 @@ text('Units', 'normalized', 'Position', [0.6 0.95], 'LineStyle', 'none', ...
 text('Units', 'normalized', 'Position', [0.6 0.88], 'LineStyle', 'none', ...
     'String', ['R^2_{adj} = ' r2adj]);
 legend('off');
-

@@ -1,3 +1,5 @@
+%KINKANGLEDISTRIBUTION Create a kink angle distribution panel
+
 function p = KinkAngleDistribution
 ph = 99; % panel height
 pTitle = 'Kink Angle Distribution';
@@ -163,4 +165,3 @@ v1 = xy(:,p1+1)-xy(:,p1); % Entering vectors
 v2 = xy(:,p2+1)-xy(:,p2); % Exiting vectors
 
 kinkAngle = 180/pi*acos(sum(v1.*v2)./sqrt(sum(v1.^2).*sum(v2.^2)));
-

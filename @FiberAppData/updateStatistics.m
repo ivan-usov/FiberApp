@@ -1,3 +1,5 @@
+%UPDATESTATISTICS Update statistics on the corresponding panel
+
 function updateStatistics(this)
 % Number of images
 set(findobj('Tag', 't_nIm'), 'String', length(this.imageData));
@@ -28,4 +30,3 @@ else
 end
 set(findobj('Tag', 't_fibLen'), 'String', fibLen);
 set(findobj('Tag', 't_fibAvh'), 'String', fibAvh);
-

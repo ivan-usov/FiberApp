@@ -1,3 +1,5 @@
+%SAVEDATAAS "Save Data As" menu item callback
+
 function isSaved = SaveDataAs(hObject, eventdata)
 
 FA = guidata(hObject);
@@ -24,4 +26,3 @@ FA.isDataModified = false;
 
 % FiberApp tutorial
 FA.tutorial('save_as');
-

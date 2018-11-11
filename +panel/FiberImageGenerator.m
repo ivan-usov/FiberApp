@@ -1,3 +1,5 @@
+%FIBERIMAGEGENERATOR Create a fiber image generator panel
+
 function p = FiberImageGenerator
 ph = 333; % panel height
 pTitle = 'Fiber/Image Generator';
@@ -382,4 +384,3 @@ set(hObject, 'Enable', 'on', 'String', 'Generate');
         im(y_min:y_max,x_min:x_max) = max(im(y_min:y_max,x_min:x_max), val);
     end
 end
-

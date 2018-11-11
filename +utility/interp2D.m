@@ -1,6 +1,6 @@
-function z = interp2D(im, xi, yi, method)
-%INTERP2D 2D data interpolation
+%INTERP2D Fast 2D data interpolation
 
+function z = interp2D(im, xi, yi, method)
 [nrows, ncols] = size(im);
 
 switch method
@@ -115,4 +115,3 @@ end
 % Now set out of range values to extval
 if ~isempty(xout); z(xout) = 0; end
 if ~isempty(yout); z(yout) = 0; end
-

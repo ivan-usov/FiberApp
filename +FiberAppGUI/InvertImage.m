@@ -1,3 +1,5 @@
+%INVERTIMAGE "Invert Image" menu item callback
+
 function InvertImage(hObject, eventdata)
 
 FA = guidata(hObject);
@@ -5,4 +7,3 @@ FA = guidata(hObject);
 % Invert image
 FA.im = max(FA.im(:)) + min(FA.im(:)) - FA.im;
 FA.updateImage('PreserveContrast', 'PreserveView');
-

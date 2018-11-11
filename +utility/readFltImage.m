@@ -1,7 +1,7 @@
+%READFLTIMAGE Read an FLT image (Thermicroscopes SPMLab floating point)
+
 function [im, sizeX, sizeY, sizeX_nm, sizeY_nm, scaleXY, scaleZ] = ...
     readFltImage(filePath, fileName)
-% Test version of FLT format reader (Thermicroscopes SPMLab floating point)
-
 % Initialize variables with empty values
 im = [];
 sizeX = [];
@@ -50,4 +50,3 @@ scaleZ = sscanf(sHeader{strncmp(sHeader, 'ZTransferCoefficient', 20)}, 'ZTransfe
 scaleZ = scaleZ * 1e3 / 255;
 
 fclose(fid);
-

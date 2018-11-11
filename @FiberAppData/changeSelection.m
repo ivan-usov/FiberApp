@@ -1,3 +1,5 @@
+%CHANGESELECTION Change fiber selection on mouse click
+
 function changeSelection(this, val)
 % Return if the selection is on already selected fiber or selection was
 % dropped (val == 0)
@@ -36,4 +38,3 @@ for k = 1:size(m, 2)
         'Position',  [mx-ms/2, my-ms/2, ms, ms], 'EdgeColor', this.maskLineColor, ...
         'LineWidth', this.maskLineWidth);
 end
-

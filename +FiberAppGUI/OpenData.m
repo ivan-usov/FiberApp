@@ -1,3 +1,5 @@
+%OPENDATA "Open Data" menu item callback
+
 function isOpened = OpenData(hObject, eventdata)
 
 FA = guidata(hObject);
@@ -54,4 +56,3 @@ end
 
 % Change a current folder
 cd(filePath);
-

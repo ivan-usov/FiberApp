@@ -1,3 +1,5 @@
+%IMAGEPARAMETERS Create an image parameters panel
+
 function p = ImageParameters
 ph = 144; % panel height
 pTitle = 'Image Parameters';
@@ -151,4 +153,3 @@ switch get(hObject, 'Tag')
 end
 
 FA.updateImage('PreserveContrast', 'PreserveView');
-

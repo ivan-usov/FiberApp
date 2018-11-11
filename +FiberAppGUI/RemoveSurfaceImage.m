@@ -1,3 +1,5 @@
+%REMOVESURFACEIMAGE "Remove Surface" menu item callback
+
 function RemoveSurfaceImage(hObject, eventdata)
 
 FA = guidata(hObject);
@@ -7,4 +9,3 @@ FA.im = imtophat(FA.im, strel('square', 75));
 waitbar(0.9);
 FA.updateImage('PreserveView');
 delete(hwb);
-

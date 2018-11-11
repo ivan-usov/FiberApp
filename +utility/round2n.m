@@ -1,6 +1,6 @@
-function out = round2n(in)
 %ROUND2N Round a number up to two significant digits
 
+function out = round2n(in)
 if in == 0
     out = 0;
     return
@@ -19,4 +19,3 @@ while(abs(in) > 100)
 end
 
 out = round(in)*10.^i;
-

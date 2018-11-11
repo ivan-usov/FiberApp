@@ -1,3 +1,5 @@
+%ADDFIBER "Add Fiber" menu item callback
+
 function AddFiber(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -47,4 +49,3 @@ FA.isDataModified = true;
 
 % Fit fiber, if checkbox is on
 if FA.autoFit; FiberAppGUI.FitFiber(hObject, eventdata); end
-

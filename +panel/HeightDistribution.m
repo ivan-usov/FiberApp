@@ -1,3 +1,5 @@
+%HEIGHTDISTRIBUTION Create a height distribution panel
+
 function p = HeightDistribution
 ph = 145; % panel height
 pTitle = 'Height Distribution';
@@ -223,4 +225,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Plot');
-

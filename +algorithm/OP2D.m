@@ -1,6 +1,7 @@
+%OP2D Calculate 2D Order Parameter vs a box size
+
 function [xdata, ydata] = OP2D(p_all, v_all, xMin, yMin, ...
     gridStep, procStepNum, numCellX, numCellY, isCircleArea)
-%ORDERPARAMETER2D Calculate Order Parameter 2D vs Box size
 
 % Arrange and calculate data in cells
 SIZE = [numCellY numCellX];
@@ -155,4 +156,3 @@ for k = 2:procStepNum
     % ----------
     ydata(k) = mean(val(nn~=0));
 end
-

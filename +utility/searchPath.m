@@ -1,5 +1,6 @@
-function [x_p, y_p] = searchPath(im, fibInt, x_0, y_0, x_end, y_end)
+%SEARCHPATH Implementation of an A* path search algorithm
 
+function [x_p, y_p] = searchPath(im, fibInt, x_0, y_0, x_end, y_end)
 % Terminate, if the start point is the same as the end point
 if (x_0 == x_end && y_0 == y_end)
     x_p = x_0;
@@ -193,4 +194,3 @@ end
 % Couldn't find a path
 x_p = [];
 y_p = [];
-

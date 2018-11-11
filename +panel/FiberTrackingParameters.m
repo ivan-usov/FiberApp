@@ -1,3 +1,5 @@
+%FIBERTRACKINGPARAMETERS Create a fiber tracking parameters panel
+
 function p = FiberTrackingParameters
 ph = 305; % panel height
 pTitle = 'Fiber Tracking Parameters';
@@ -285,4 +287,3 @@ FA.autoFit = (get(hObject, 'Value') == get(hObject, 'Max'));
 function FiberTrackingParameters_AStar(hObject, eventdata)
 FA = guidata(hObject);
 FA.aStar = (get(hObject, 'Value') == get(hObject, 'Max'));
-

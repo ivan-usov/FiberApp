@@ -1,5 +1,6 @@
-function [xdata, ydata, size] = getMask(this)
+%GETMASK Get mask coordinates from a mouse input 
 
+function [xdata, ydata, size] = getMask(this)
 % Save main key and button function
 kpf_main = get(gcf, 'KeyPressFcn');
 wbdf_main = get(gcf, 'WindowButtonDownFcn');
@@ -116,4 +117,3 @@ uiwait;
         uiresume;
     end
 end
-

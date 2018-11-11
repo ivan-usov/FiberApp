@@ -1,6 +1,6 @@
-function [xdata, ydata, count] = MSMD(data, step, procStepNum)
-%MSMIDPOINTDISPLACEMENT Mean-Square Midpoint Displacement
+%MSMD Calculate mean-squared midpoint displacement
 
+function [xdata, ydata, count] = MSMD(data, step, procStepNum)
 xdata = step*(1:procStepNum);
 ydata = zeros(1, procStepNum); % MS midpoint displacement
 count = zeros(1, procStepNum); % weight of each graph point
@@ -24,4 +24,3 @@ for k = 1:length(data)
 end
 
 ydata = ydata./count;
-

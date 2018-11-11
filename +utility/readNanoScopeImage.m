@@ -1,3 +1,5 @@
+%READNANOSCOPEIMAGE Read a NanoScope image
+
 function [im, sizeX, sizeY, sizeX_nm, sizeY_nm, scaleXY, scaleZ] = ...
     readNanoScopeImage(filePath, fileName)
 
@@ -109,4 +111,3 @@ fseek(fid, data_offset(ind_h(sel)), 'bof');
 im = rot90(fread(fid, [sizeX, sizeY], '*int16'));
 
 fclose(fid);
-

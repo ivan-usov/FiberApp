@@ -1,3 +1,5 @@
+%MERGEDATA "Merge Data" menu item callback
+
 function MergeData(hObject, eventdata)
 % Get addresses of the files to merge
 [fileName, filePath] = uigetfile('*.mat', 'Select data files to merge', ...
@@ -49,4 +51,3 @@ if ~strcmp(utility.getFileExtension(fileNameOut), 'mat')
 end
 
 save(fullfile(filePathOut, fileNameOut), 'imageData');
-

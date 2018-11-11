@@ -1,3 +1,5 @@
+%CHECKACCORDANCE Check accordance between a fiber data and an image 
+
 function checkAccordance(this)
 % Clean axes from fibers
 delete(this.fibLine);
@@ -81,4 +83,3 @@ else % Image already has fiber data
         this.curIm.xy, 'UniformOutput', false));
     this.renderFibers();
 end
-

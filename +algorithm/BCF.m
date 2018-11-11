@@ -1,6 +1,6 @@
-function [xdata, ydata, count] = BCF(data, step, procStepNum)
-%BONDCORRELATIONFUNCTION Bond correlation function
+%BCF Calculate bond correlation function
 
+function [xdata, ydata, count] = BCF(data, step, procStepNum)
 xdata = step*(1:procStepNum);
 ydata = zeros(1, procStepNum); % <cos(\theta(l))>
 count = zeros(1, procStepNum); % weight of each graph point
@@ -24,4 +24,3 @@ for k = 1:length(data)
 end
 
 ydata = ydata./count;
-

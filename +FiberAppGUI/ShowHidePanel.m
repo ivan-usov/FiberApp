@@ -1,7 +1,6 @@
-function ShowHidePanel(hObject, eventdata)
-% Function for controling appearance of the menu and toolbar elements upon
-% panel opening and closing
+%SHOWHIDEPANEL A callback to show and close panels via their menu and toolbar items
 
+function ShowHidePanel(hObject, eventdata)
 tag = get(hObject, 'Tag');
 FA = guidata(gcf);
 switch get(hObject, 'Type')
@@ -21,4 +20,3 @@ switch get(hObject, 'Type')
             FA.hidePanel(tag);
         end
 end
-

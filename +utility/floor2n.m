@@ -1,6 +1,6 @@
-function out = floor2n(in)
 %FLOOR2N Floor a small number (<100) up to two significant digits
 
+function out = floor2n(in)
 if in == 0
     out = 0;
     return
@@ -19,4 +19,3 @@ end
 % end
 
 out = floor(in)*10.^i;
-

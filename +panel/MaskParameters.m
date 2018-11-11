@@ -1,3 +1,5 @@
+%MASKPARAMETERS Create a mask parameters panel
+
 function p = MaskParameters
 FA = guidata(gcf);
 ph = 121; % panel height
@@ -88,4 +90,3 @@ end
 function MaskParameters_setMask(hObject, eventdata)
 FA = guidata(hObject);
 FA.setMask = ((get(hObject, 'Value') == get(hObject, 'Max')));
-

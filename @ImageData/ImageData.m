@@ -1,3 +1,5 @@
+%IMAGEDATA A class for storing image data
+
 classdef ImageData < handle    
     properties % Stored image information
         name = char.empty;
@@ -57,4 +59,3 @@ classdef ImageData < handle
         end
     end
 end
-

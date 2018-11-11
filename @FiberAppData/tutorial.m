@@ -1,3 +1,5 @@
+%TUTORIAL Show tutorial messages
+
 function tutorial(this, varargin)
 if ~this.isTutorial; return; end
 
@@ -69,4 +71,3 @@ end
 this.tutorialShowed{end+1} = tutorial_message;
 
 end
-

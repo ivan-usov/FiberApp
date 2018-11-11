@@ -1,6 +1,6 @@
-function [xdata, ydata, count] = MSE2ED(data, step, procStepNum)
-%MSEND2ENDDISTANCE Mean-Square End-to-End Distance
+%MSE2ED Calculate mean-squared end-to-end distance
 
+function [xdata, ydata, count] = MSE2ED(data, step, procStepNum)
 xdata = step*(1:procStepNum);
 ydata = zeros(1, procStepNum); % mean square end-to-end distance
 count = zeros(1, procStepNum); % weight of each graph point
@@ -22,4 +22,3 @@ for k = 1:length(data)
 end
 
 ydata = ydata./count;
-

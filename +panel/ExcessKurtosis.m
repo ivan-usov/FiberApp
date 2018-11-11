@@ -1,3 +1,5 @@
+%EXCESSKURTOSIS Create an excess kurtosis panel
+
 function p = ExcessKurtosis
 ph = 76; % panel height
 pTitle = 'Excess Kurtosis';
@@ -137,4 +139,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Calculate');
-

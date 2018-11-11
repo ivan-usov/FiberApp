@@ -1,3 +1,5 @@
+%FITFIBER "Fit Fiber" menu item callback
+
 function FitFiber(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -136,4 +138,3 @@ FA.sel = FA.sel;
 
 % Data is modified
 FA.isDataModified = true;
-

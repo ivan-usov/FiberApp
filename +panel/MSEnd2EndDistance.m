@@ -1,3 +1,5 @@
+%MSEND2ENDDISTANCE Create a mean-squared end-to-end distance panel
+
 function p = MSEnd2EndDistance
 ph = 145; % panel height
 pTitle = 'MS End-to-end Distance';
@@ -219,4 +221,3 @@ text('Units', 'normalized', 'Position', [0.03 0.95], 'LineStyle', 'none', ...
 text('Units', 'normalized', 'Position', [0.03 0.88], 'LineStyle', 'none', ...
     'String', ['R^2_{adj} = ' r2adj]);
 legend('off');
-

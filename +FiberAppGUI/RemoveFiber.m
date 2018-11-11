@@ -1,3 +1,5 @@
+%REMOVEFIBER "Remove Fiber" menu item callback
+
 function RemoveFiber(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -27,4 +29,3 @@ FA.sel = 0;
 
 % Data is modified
 FA.isDataModified = true;
-

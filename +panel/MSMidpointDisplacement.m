@@ -1,3 +1,5 @@
+%MSMIDPOINTDISPLACEMENT Create a mean-squared midpoint displacement panel
+
 function p = MSMidpointDisplacement
 ph = 122; % panel height
 pTitle = 'MS Midpoint Displacement';
@@ -194,4 +196,3 @@ text('Units', 'normalized', 'Position', [0.03 0.95], 'LineStyle', 'none', ...
 text('Units', 'normalized', 'Position', [0.03 0.88], 'LineStyle', 'none', ...
     'String', ['R^2_{adj} = ' r2adj]);
 legend('off');
-

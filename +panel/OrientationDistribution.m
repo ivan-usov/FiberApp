@@ -1,3 +1,5 @@
+%ORIENTATIONDISTRIBUTION Create an orientation distribution panel
+
 function p = OrientationDistribution
 ph = 122; % panel height
 pTitle = 'Orientation Distribution';
@@ -188,4 +190,3 @@ function v = get_vectors(xy)
 v = diff(xy, 1, 2);
 l = sqrt(sum(v.^2));
 v = v./[l; l];
-

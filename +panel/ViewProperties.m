@@ -1,3 +1,5 @@
+%VIEWPROPERTIES Create a view properties panel
+
 function p = ViewProperties
 ph = 144; % panel height
 pTitle = 'View Properties';
@@ -164,4 +166,3 @@ if FA.sel ~= 0
     set(FA.fibLine(FA.sel), 'LineWidth', FA.selFiberWidth);
 end
 set(FA.maskLine, 'LineWidth', FA.maskLineWidth);
-

@@ -1,3 +1,5 @@
+%SCALINGEXPONENT Create a scaling exponent panel
+
 function p = ScalingExponent
 ph = 99; % panel height
 pTitle = 'Scaling Exponent';
@@ -169,4 +171,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Calculate');
-

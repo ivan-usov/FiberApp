@@ -1,6 +1,6 @@
-function updatePanelPosition(this)
-% Update the open panels positions
+%UPDATEPANELPOSITION Update positions of the open panels
 
+function updatePanelPosition(this)
 figPos = get(gcf, 'Position');
 
 % Set user panels position
@@ -34,4 +34,3 @@ if 1+figPos(3)-x <= 0 % if there is no room for the scroll panel
 else % otherwise fill the rest of the window
     set(scrollPanel, 'Position', [x, 1, 1+figPos(3)-x, figPos(4)]);
 end
-

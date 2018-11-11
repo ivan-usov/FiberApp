@@ -1,3 +1,5 @@
+%TUTORIAL "Tutorial" menu item callback
+
 function Tutorial(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -10,4 +12,3 @@ else
     
     FA.tutorial('tutorial_is_on');
 end
-

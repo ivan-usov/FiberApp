@@ -1,3 +1,5 @@
+%SAVEDATA "Save Data" menu item callback
+
 function isSaved = SaveData(hObject, eventdata)
 
 FA = guidata(hObject);
@@ -11,4 +13,3 @@ else
     % Data saved, and no longer differ from data in the file
     FA.isDataModified = false;
 end
-

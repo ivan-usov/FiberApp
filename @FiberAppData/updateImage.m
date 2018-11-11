@@ -1,5 +1,6 @@
+%UPDATEIMAGE Created a new image for viewing (uint8) and display it
+
 function updateImage(this, varargin)
-%UPDATEIMAGE Update image for viewing (uint8) and display it
 % Parse input
 preserveContrast = false;
 preserveView = false;
@@ -32,4 +33,3 @@ displayIm = uint8((2*scale*(this.im-this.viewMinZ)-1)/2);
 
 % Replace old image with a new one
 this.spApi.replaceImage(displayIm, this.colorMap, 'PreserveView', preserveView);
-

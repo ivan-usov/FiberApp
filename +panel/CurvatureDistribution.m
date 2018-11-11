@@ -1,3 +1,5 @@
+%CURVATUREDISTRIBUTION Create a curvature distribution panel
+
 function p = CurvatureDistribution
 ph = 168; % panel height
 pTitle = 'Curvature Distribution';

@@ -1,6 +1,6 @@
-function [xdata, ydata] = getPoint(this)
-% GETPOINT Get point coordinates with mouse input
+%GETPOINT Get point coordinates from a mouse input
 
+function [xdata, ydata] = getPoint(this)
 % Save main key and button function
 kpf_main = get(gcf, 'KeyPressFcn');
 wbdf_main = get(gcf, 'WindowButtonDownFcn');
@@ -65,4 +65,3 @@ uiwait;
         uiresume;
     end
 end
-

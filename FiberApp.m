@@ -1,6 +1,6 @@
-function FiberApp
-%FIBERAPP FiberApp entry point
+%FIBERAPP Start FiberApp
 
+function FiberApp
 % Open main figure
 figure('Name', 'FiberApp', 'NumberTitle', 'off', 'DockControls', 'off', ...
     'MenuBar', 'none', 'Tag', 'FiberApp', 'Position', [100, 100, 888, 658], ...
@@ -448,4 +448,3 @@ end
 
 delete(gcf);
 end
-

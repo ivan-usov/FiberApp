@@ -1,3 +1,5 @@
+%REMOVEMASK "Remove Mask" menu item callback
+
 function RemoveMask(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -14,4 +16,3 @@ FA.isDataModified = true;
 
 % Fit fiber, if checkbox is on
 if FA.autoFit; FiberAppGUI.FitFiber(hObject, eventdata); end
-

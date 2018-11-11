@@ -1,3 +1,5 @@
+%SCALEBARIMAGE "Scale Bar" menu item callback
+
 function ScaleBarImage(hObject, eventdata)
 FA = guidata(hObject);
 
@@ -23,4 +25,3 @@ FA.step_nm = utility.round2n(3*FA.scaleXY);
 FA.step = FA.step_nm/FA.scaleXY;
 
 FA.checkAccordance();
-

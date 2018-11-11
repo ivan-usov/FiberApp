@@ -1,3 +1,5 @@
+%HEIGHTPROFILE Create a height profile panel
+
 function p = HeightProfile
 ph = 53; % panel height
 pTitle = 'Height Profile';
@@ -73,4 +75,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Plot');
-

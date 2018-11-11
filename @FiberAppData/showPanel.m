@@ -1,3 +1,5 @@
+%SHOWPANEL Show panel
+
 function showPanel(this, tag)
 
 % Make menu item and toggle tool checked
@@ -9,4 +11,3 @@ p = this.panels.(tag);
 set(p, 'Visible', 'on');
 
 this.openPanels(end+1) = p;
-

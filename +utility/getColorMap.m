@@ -1,3 +1,5 @@
+%GETCOLORMAP Return a 256-color colormap corresponding to a string input
+
 function map = getColorMap(type)
 switch type
     case 'gray'
@@ -25,4 +27,3 @@ switch type
     case 'winter'
         map = winter(256);
 end
-

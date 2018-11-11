@@ -1,3 +1,5 @@
+%SETZEROLEVELIMAGE "Set Zero Level" menu item callback
+
 function SetZeroLevelImage(hObject, eventdata)
 
 FA = guidata(hObject);
@@ -14,4 +16,3 @@ FA.updateImage('PreserveView');
 roughness = sqrt(mean((area(:)-zero_level).^2))*FA.scaleZ;
 msgbox(['RMS surface roughness = ', num2str(roughness), ' nm'], ...
     'Set Zero Level');
-

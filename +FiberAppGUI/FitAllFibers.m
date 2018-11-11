@@ -1,3 +1,5 @@
+%FITALLFIBERS "Fit All Fibers" menu item callback
+
 function FitAllFibers(hObject, eventdata)
 prev = 0;
 hwb = waitbar(prev, 'Please wait...', 'CloseRequestFcn', '');
@@ -17,4 +19,3 @@ end
 
 % Remove the progress bar
 delete(hwb);
-

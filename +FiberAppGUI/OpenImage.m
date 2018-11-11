@@ -1,3 +1,5 @@
+%OPENIMAGE "Open Image" menu item callback
+
 function OpenImage(hObject, eventdata)
 FA = guidata(hObject);
 % Open dialog for image selection
@@ -78,4 +80,3 @@ switch utility.getFileExtension(fileName)
     otherwise
         FA.tutorial('open_afm_image');
 end
-

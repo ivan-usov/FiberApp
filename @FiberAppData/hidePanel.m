@@ -1,3 +1,5 @@
+%HIDEPANEL Hide panel 
+
 function hidePanel(this, tag)
 % Make menu item and toggle tool unchecked
 set(findobj('Type', 'uimenu', 'Tag', tag), 'Checked', 'off');
@@ -8,4 +10,3 @@ p = this.panels.(tag);
 set(p, 'Visible', 'off');
 
 this.openPanels(this.openPanels == p) = [];
-

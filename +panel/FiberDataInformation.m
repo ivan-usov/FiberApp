@@ -1,3 +1,5 @@
+%FIBERDATAINFORMATION Create a fiber data information panel
+
 function p = FiberDataInformation
 ph = 209; % panel height
 pTitle = 'Fiber Data Information';
@@ -83,4 +85,3 @@ function FiberDataInformation_DataName(hObject, eventdata)
 FA = guidata(hObject);
 set(hObject, 'String', FA.dataName);
 errordlg('Access denied');
-

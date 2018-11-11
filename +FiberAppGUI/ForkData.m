@@ -1,3 +1,5 @@
+%FORKDATA "Fork Data" menu item callback
+
 function ForkData(hObject, eventdata)
 
 % Get address of the file to split data from
@@ -23,4 +25,3 @@ if isequal(fileNameOut, 0); return; end
 
 imageData = loadData.imageData(sel);
 save(fullfile(filePathOut, fileNameOut), 'imageData');
-

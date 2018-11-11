@@ -1,6 +1,6 @@
-function len = getScaleBarLineLength(this)
-% GETSCALEBARLINELENGTH Get horizontal or vertical scale bar line with mouse input
+%GETSCALEBARLINELENGTH Get horizontal or vertical scale bar line from a mouse input
 
+function len = getScaleBarLineLength(this)
 % Save main key and button functions
 kpf_main = get(gcf, 'KeyPressFcn');
 wbdf_main = get(gcf, 'WindowButtonDownFcn');
@@ -119,4 +119,3 @@ uiwait;
         uiresume;
     end
 end
-

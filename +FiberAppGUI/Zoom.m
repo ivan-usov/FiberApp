@@ -1,3 +1,5 @@
+%ZOOM Zoom-related menu items callback
+
 function Zoom(hObject, eventdata, dir)
 FA = guidata(hObject);
 switch dir
@@ -8,4 +10,3 @@ switch dir
     case 'actual'
         FA.pan_zoom('z_actual');
 end
-

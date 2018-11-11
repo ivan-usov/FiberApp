@@ -1,6 +1,6 @@
-function [xdata, ydata] = getFiberAStar(this)
-% GETFIBERASTAR Get line coordinates with mouse input
+%GETFIBERASTAR Get A* path coordinates from a mouse input
 
+function [xdata, ydata] = getFiberAStar(this)
 % Save main key and button functions
 kpf_main = get(gcf, 'KeyPressFcn');
 wbdf_main = get(gcf, 'WindowButtonDownFcn');
@@ -143,4 +143,3 @@ uiwait;
         uiresume;
     end
 end
-

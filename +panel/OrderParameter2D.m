@@ -1,3 +1,5 @@
+%ORDERPARAMETER2D Create a 2D order parameter panel
+
 function p = OrderParameter2D
 ph = 277; % panel height
 pTitle = 'Order Parameter 2D';
@@ -352,4 +354,3 @@ l = sqrt(sum(v_rand.^2));
 v_rand = v_rand./[l; l];
 
 p_rand = p_rand(:,1:end-1);
-

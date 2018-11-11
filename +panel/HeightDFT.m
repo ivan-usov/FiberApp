@@ -1,3 +1,5 @@
+%HEIGHTDFT Create a height Discrete Fourier transform panel
+
 function p = HeightDFT
 ph = 99; % panel height
 pTitle = 'Height DFT';
@@ -150,4 +152,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Calculate');
-

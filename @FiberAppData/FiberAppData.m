@@ -1,6 +1,6 @@
+%FIBERAPPDATA FiberApp core class
+
 classdef FiberAppData < handle
-    %FIBERAPPDATA FiberApp core class
-    
     properties % Basic data
         spApi               % scroll panel API
         spAxes              % scroll panel axes
@@ -245,4 +245,3 @@ classdef FiberAppData < handle
         renderFibers(this, varargin);
     end
 end
-

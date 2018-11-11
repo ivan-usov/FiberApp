@@ -1,6 +1,6 @@
-function [xdata, ydata] = getFiber(this)
-% GETFIBER Get line coordinates with mouse input
+%GETFIBER Get line coordinates from a mouse input
 
+function [xdata, ydata] = getFiber(this)
 % Save main key and button functions
 kpf_main = get(gcf, 'KeyPressFcn');
 wbdf_main = get(gcf, 'WindowButtonDownFcn');
@@ -108,4 +108,3 @@ uiwait;
         uiresume;
     end
 end
-

@@ -1,3 +1,5 @@
+%PAN_ZOOM Pan and zoom operations 
+
 function pan_zoom(this, varargin)
 switch varargin{1}
     case 'z_in'     % Zoom in
@@ -47,5 +49,3 @@ switch varargin{1}
         r = this.spApi.getVisibleImageRect();
         this.spApi.setVisibleLocation(r(1), r(2)+0.1*r(4));
 end
-end
-

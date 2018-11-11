@@ -1,3 +1,5 @@
+%LENGTHDISTRIBUTION Create a length distribution panel
+
 function p = LengthDistribution
 ph = 122; % panel height
 pTitle = 'Length Distribution';
@@ -156,4 +158,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Plot');
-

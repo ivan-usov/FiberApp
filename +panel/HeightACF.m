@@ -1,3 +1,5 @@
+%HEIGHTACF Create a height autocorrelation function panel
+
 function p = HeightACF
 ph = 145; % panel height
 pTitle = 'Height ACF';
@@ -246,4 +248,3 @@ end
 
 % Recover the button
 set(hObject, 'Enable', 'on', 'String', 'Calculate');
-

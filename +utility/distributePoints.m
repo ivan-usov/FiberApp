@@ -1,6 +1,6 @@
-function outXY = distributePoints(inXY, step)
-%DISTRIBUTE_POINTS Distribute equally spaced points along the curve
+%DISTRIBUTEPOINTS Distribute along a curve equally spaced points
 
+function outXY = distributePoints(inXY, step)
 % Coordinates of vectors between consecutive points
 vect = diff(inXY, 1, 2);
 
@@ -33,4 +33,3 @@ pcNew = (pcNew-pcOld(bin))./vectLen(bin);
 
 % Coordinates of the new curve
 outXY = inXY(:,bin) + vect(:,bin).*[pcNew; pcNew];
-
