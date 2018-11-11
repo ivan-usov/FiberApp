@@ -1,5 +1,8 @@
 %IMAGEDATA A class for storing image data
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 classdef ImageData < handle    
     properties % Stored image information
         name = char.empty;

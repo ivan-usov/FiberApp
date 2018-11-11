@@ -1,5 +1,8 @@
 %FITALLFIBERS "Fit All Fibers" menu item callback
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function FitAllFibers(hObject, eventdata)
 prev = 0;
 hwb = waitbar(prev, 'Please wait...', 'CloseRequestFcn', '');

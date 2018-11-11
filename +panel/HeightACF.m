@@ -1,5 +1,8 @@
 %HEIGHTACF Create a height autocorrelation function panel
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function p = HeightACF
 ph = 145; % panel height
 pTitle = 'Height ACF';

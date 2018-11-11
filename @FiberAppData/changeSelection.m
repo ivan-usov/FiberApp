@@ -1,5 +1,8 @@
 %CHANGESELECTION Change fiber selection on mouse click
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function changeSelection(this, val)
 % Return if the selection is on already selected fiber or selection was
 % dropped (val == 0)

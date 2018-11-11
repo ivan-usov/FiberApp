@@ -1,5 +1,8 @@
 %VIEWPROPERTIES Create a view properties panel
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function p = ViewProperties
 ph = 144; % panel height
 pTitle = 'View Properties';

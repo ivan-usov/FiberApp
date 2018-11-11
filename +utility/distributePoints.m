@@ -1,5 +1,8 @@
 %DISTRIBUTEPOINTS Distribute along a curve equally spaced points
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function outXY = distributePoints(inXY, step)
 % Coordinates of vectors between consecutive points
 vect = diff(inXY, 1, 2);

@@ -1,5 +1,8 @@
 %ORDERPARAMETER2D Create a 2D order parameter panel
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function p = OrderParameter2D
 ph = 277; % panel height
 pTitle = 'Order Parameter 2D';

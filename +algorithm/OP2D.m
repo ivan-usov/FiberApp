@@ -1,5 +1,8 @@
 %OP2D Calculate 2D Order Parameter vs a box size
 
+% Copyright (c) 2011-2014 ETH Zurich, 2015 FiberApp Contributors. All rights reserved.
+% Use of this source code is governed by a BSD-style license that can be found in the LICENSE file.
+
 function [xdata, ydata] = OP2D(p_all, v_all, xMin, yMin, ...
     gridStep, procStepNum, numCellX, numCellY, isCircleArea)
 
